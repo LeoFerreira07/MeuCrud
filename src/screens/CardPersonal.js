@@ -12,6 +12,7 @@ export default function CardPersonal({ item, navigation, refresh }) {
           {item.firstName} {item.lastName}
         </Text>
         <Text style={styles.email}>{item.email}</Text>
+        <Text style={styles.phone}>{item.phone}</Text>
       </View>
 
       {/* Botões de ação */}

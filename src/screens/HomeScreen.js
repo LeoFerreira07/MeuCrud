@@ -26,6 +26,11 @@ export default function HomeScreen({ navigation }) {
       setPeople(data);
     } catch (e) {
       setError("Não foi possível carregar os dados.");
+      Alert.alert(
+        "Erro de conexão",
+        "Não foi possível carregar os dados. Verifique sua conexão.",
+        [{ text: "Tentar novamente", onPress: loadPeople }]
+      );
     } finally {
       setLoading(false);
     }
